@@ -1,10 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
-    --primary-color: rgb(0, 128, 128);
-    --primary-color-transparent: rgba(0, 128, 128, 0.5);
-    --secondary-color: rgb(0, 51, 102);
-    --black-transparent: rgba(0, 0, 0, 0.3);
-    --main-font: Montserrat, sans-serif;
-    --footer-background-color: #20232a;
+:root {
+  --primary-color: rgb(0, 128, 128);
+  --primary-color-transparent: rgba(0, 128, 128, 0.5);
+  --secondary-color: rgb(0, 51, 102);
+  --black-transparent: rgba(0, 0, 0, 0.3);
+  --main-font: Montserrat, sans-serif;
+  --footer-background-color: #20232a;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  ul {
+    list-style-type: none;
+  }
+  button {
+    background-color: var(--primary-color);
+    color: inherit;
+    border: none;
+    padding: 6px;
+  }
+  header {
+    background-image: linear-gradient(
+        to bottom left,
+        var(--black-transparent),
+        var(--primary-color-transparent)
+      ),
+      url(Images/header_image.avif);
+    background-position: top;
+    background-size: cover;
+    color: white;
+    h1 {
+      font-style: italic;
+      text-transform: uppercase;
+      font-size: 4rem;
+      margin: 0;
+      font-weight: 900;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        width: 55px;
+        height: 56px;
+      }
+    }
+    hgroup {
+      text-align: center;
+      padding-bottom: 15px;
+      p {
+        font-weight: 500;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          margin: 0 8px;
+        }
+      }
+    }
+  }
+  main {
+    section#objectives {
+        div.house{
+            display: flex;
+            justify-content: center;
+            padding: 110px;
+            img{
+                width: 18rem;
+                height: 18rem;
+            }
+            hgroup.aboutHouse{
+                margin: 85px 0 0 -35px;
+                color: var(--primary-color);
+                h3{
+                    a{
+                        color: inherit;
+                    }
+                }
+                p{
+                    width: 65%;
+                    margin-left: 80px;
+                }
+            }
+        }
+      div.services {
+        width: 100%;
+        display: flex;
+        div.item {
+          padding: 25px;
+          text-align: center;
+          width: 50%;
+          border: rgb(240, 240, 240) 1px solid;
+          img {
+            width: 39px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
 }
